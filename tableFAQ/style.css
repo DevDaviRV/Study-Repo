@@ -1,0 +1,129 @@
+
+
+
+/* Tabela FAQ */
+
+#box-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-left:1rem;
+}
+
+.title-faq {
+    padding: 0;
+    padding-left: .3rem;
+}
+
+
+.text-table {
+    box-sizing: border-box;
+}
+
+#cards-habilidade-faq {
+    overflow: hidden;
+    border: solid 1px black;
+    width: 50rem;
+    
+}
+
+.card-faq {
+    border: solid 1px black;
+    height: 3rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+
+.content-faq {
+    border-top: solid 1px black;
+    
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.header-faq {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+/* input checkbox */
+
+/* Hide the default checkbox */
+.container-faq input {
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+  }
+  
+  .container-faq {
+    display: flex;
+    align-self: center;
+    position: relative;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    user-select: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 3px;
+    background: rgba(216, 216, 216, 0.603);
+  }
+  
+  .container-faq:hover {
+    background: rgba(197, 197, 197, 0.527);
+  }
+  
+  .line {
+    width: calc(100% - 8px);
+    height: 3px;
+    left: 4px;
+    background: rgb(58, 58, 58);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .7s transform cubic-bezier(0,1,.33,1.2), background .4s;
+  }
+  
+  .line-indicator {
+    transform: translateY(-50%) rotate(90deg);
+  }
+  
+  .container-faq input:checked ~ .line-indicator {
+    transform: translateY(-50%);
+  }
+  
+
+  @media screen and (max-width: 769px ){
+    #cards-habilidade-faq {
+        width: 90%;
+        margin: auto;
+    }
+    .content-faq {
+        border-top: solid 1px black;
+        padding-left: 0.3rem;
+        
+    }
+  }
+  
+  @media screen and (max-width: 500px ){
+    #cards-habilidade-faq {
+        width: 90%;
+        margin: auto;
+    }
+    .content-faq {
+        border-top: solid 1px black;
+        padding-left: 0.3rem;
+        
+    }
+  }
