@@ -26,15 +26,15 @@ function exibirPrimo(limite){
 
 
 
-criar function que exibe a quantidade de * que possui
+//criar function que exibe a quantidade de * que possui
 exibirAsteriscos(5)
 
 function exibirAsteriscos(linhas){
-    // let padrao = '';
-    // for(let linha = 1; linha <= linhas; linha++){
-    //     padrao += '*'
-    //     console.log(padrao);
-    // }
+     let padrao = '';
+     for(let linha = 1; linha <= linhas; linha++){
+         padrao += '*'
+         console.log(padrao);
+     }
 
     // outra forma de resolver (loop nested)
 
@@ -78,9 +78,9 @@ function calcMedia(array) {
 
 
 
-Criar Função que reotrna os multipros de 3 e 5 ate certo limite
-e some todos os multiplos ate o 'limite'
-somar(10);
+//Criar Função que reotrna os multipros de 3 e 5 ate certo limite
+//e some todos os multiplos ate o 'limite'
+//somar(10);
 
 function somar(limite) {
     let mult3 = 0;
@@ -96,8 +96,8 @@ function somar(limite) {
 
 
 
-Criar um metodo para ler propriedades de um objeto 
-Exibir somente as propriedades do tipo string presentes no Objeto
+//Criar um metodo para ler propriedades de um objeto 
+//Exibir somente as propriedades do tipo string presentes no Objeto
 const filme = {
     title : 'ving',
     ano : 2018,
@@ -117,9 +117,9 @@ function exibirPropriedades(obj){
 
 
 
-CODIGO Par ou Impar
-receber uma quantidade de valores para avaliar
-funçao exibe se cada valor é par ou impar
+//CODIGO Par ou Impar
+//receber uma quantidade de valores para avaliar
+//funçao exibe se cada valor é par ou impar
 
 let result = exibirTipo(7);
 console.log(result)
@@ -136,11 +136,11 @@ function exibirTipo(limite){
 
 
 
-Codigo velocidade e multa
-velocidade max 70
-a cada 5km/h > velociade max + 1 ponto na carteira
-usar math.floor
-caso pontos > 12 = carteira suspensa
+//Codigo velocidade e multa
+//velocidade max 70
+//a cada 5km/h > velociade max + 1 ponto na carteira
+//usar math.floor
+//caso pontos > 12 = carteira suspensa
 
  let calcularV = radar(150);
  
@@ -163,7 +163,7 @@ function radar(velocidade) {
 
 
 
-codigo FIZZBUZZ
+//codigo FIZZBUZZ
 const resultado = fizzBuzz(7);
 
 console.log(resultado);
